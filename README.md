@@ -1,2 +1,4 @@
 # Vagrant-Dev
-My web development environment
+Fatest web development environment:
+Vagrant Box: hashicorp/precise32
+(PHP7, NGINX and MYSQL-SERVER)
