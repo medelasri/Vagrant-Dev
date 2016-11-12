@@ -28,5 +28,8 @@ sudo ln -s /etc/nginx/sites-available/default.conf /etc/nginx/sites-enabled/
 sudo rm -rf /etc/nginx/sites-enabled/default
 sudo rm -rf /etc/nginx/sites-available/default
 
+sed -i "s/^bind-address/#bind-address/" /etc/mysql/my.cnf
+mysql -u root -proot -e "GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'root' WITH GRANT OPTION;FLUSH PRIVILEGES"
+
 sudo service nginx restart
 sudo service php7-fpm restart
