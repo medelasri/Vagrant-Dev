@@ -1,13 +1,13 @@
 Vagrant.configure("2") do |config|
   
   config.vm.box = "hashicorp/precise32"
-  config.vm.hostname = "med"
+  config.vm.hostname = "localhost"
 
   config.vm.network "forwarded_port", guest: 80, host: 8080
   config.vm.network "forwarded_port", guest: 443, host: 44300
   config.vm.network "forwarded_port", guest: 3306, host: 33060
 
-  config.vm.synced_folder "./app", "/home/vagrant", create: true, group: "vagrant", owner: "www-data"
+  config.vm.synced_folder "./", "/home/vagrant", create: true, group: "vagrant", owner: "www-data"
                                             
   config.vm.provider "virtualbox" do |vb|
       vb.name = "local.dev"
