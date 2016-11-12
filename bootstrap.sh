@@ -21,9 +21,7 @@ sudo apt-get install -y nodejs php7.0-mysql php7.0-fpm php7.0-cli php7.0-xml php
 
 curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
 
-sudo rm -f /etc/nginx/sites-available/default
-sudo cp provision/nginx/sites/default.conf /etc/nginx/sites-available/
-sudo rm -rf provision/nginx/sites/default
+sudo cp provision/nginx/sites/app.conf /etc/nginx/sites-available/
 sudo ln -s /etc/nginx/sites-available/default.conf /etc/nginx/sites-enabled/
 sudo rm -rf /etc/nginx/sites-enabled/default
 sudo rm -rf /etc/nginx/sites-available/default
