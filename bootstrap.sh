@@ -17,7 +17,7 @@ sudo apt-get install -y vim curl git build-essential
 
 curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 
-sudo apt-get install -y nodejs php7.0-fpm php7.0-cli php7.0-xml php7.0-mbstring php7.0-zip nginx mysql-server-5.6
+sudo apt-get install -y nodejs php7.0-mysql php7.0-fpm php7.0-cli php7.0-xml php7.0-mbstring php7.0-zip nginx mysql-server-5.6
 
 curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
 
