@@ -1,13 +1,16 @@
 #!/bin/bash
 
-# update composer
+#update composer
 composer update
 
-# clear laravel cache
+#clear laravel cache
 php artisan config:clear
 php artisan cache:clear
 php artisan view:clear
 
-# windows
+#migrate database
+php artisan migrate
+
+#npm install
 sudo npm install --no-bin-links
 
