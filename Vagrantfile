@@ -18,7 +18,7 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell", path: "bootstrap.sh"
 
 # For Laravel Framework
-  config.vm.define "laravel" do |laravel|
-    laravel.vm.provision "shell", path: "laravel.sh"
-  end
+#  config.vm.define "laravel" do |laravel|
+#    laravel.vm.provision "shell", path: "laravel.sh"
+#  end
 end
