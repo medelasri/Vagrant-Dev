@@ -1,7 +1,7 @@
 # Vagrant-Dev
 Fastest web development environment:<br />
 Vagrant Box: hashicorp/precise32<br />
-Technologies: PHP7, Nodejs, NGINX, MYSQL-SERVER and more...<br />
+Technologies: PHP7, Nodejs, NGINX, MYSQL-SERVER and more...
 
 ## Installation
 * Install [VirtualBox](https://www.virtualbox.org/)
@@ -14,4 +14,5 @@ Technologies: PHP7, Nodejs, NGINX, MYSQL-SERVER and more...<br />
 [Vagrant Docs](https://www.vagrantup.com/docs/)
 
 ## Contact
-Mohammed EL ASRI <elasri.md@gmail.com>
+Mohammed EL ASRI<br /> 
+elasri.md@gmail.com
