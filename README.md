@@ -1,4 +1,4 @@
-# Vagrant-Dev
+# vagrant-dev
 Fastest web development environment:<br />
 Vagrant Box: hashicorp/precise32<br />
 Technologies: PHP7, Nodejs, NGINX, MYSQL-SERVER and more...
